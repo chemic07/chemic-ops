@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: my-app-container
-          image: rajlodhi09/node-app:0b15a2ec8465666c560ff6d5482a6bc9ae0de0a3
+          image: nginx:latest
           ports:
             - containerPort: 3000
