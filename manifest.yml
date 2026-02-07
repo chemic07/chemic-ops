@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app-deployment
+  name: backend-worker
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-app
+      app: backend-worker
   template:
     metadata:
       labels:
-        app: my-app
+        app: backend-worker
     spec:
+      restartPolicy: Always
       containers:
-        - name: my-app-container
-          image: nginx:latest
-          ports:
-            - containerPort: 3000
+        - name: backend-worker
+          image: rajlodhi09/backend-worker:SHA_H
+          imagePullPolicy: Always
