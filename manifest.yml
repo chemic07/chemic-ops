@@ -15,5 +15,5 @@ spec:
       restartPolicy: Always
       containers:
         - name: backend-worker
-          image: rajlodhi09/backend-worker:ee4a002d729d24e7bc2218312163c8f9b11deab3
+          image: rajlodhi09/backend-worker:12864e4a033cf14bfdfd67a85037e0e5abb683e0
           imagePullPolicy: Always
